@@ -1,0 +1,11 @@
+rows:
+  - id: robovetter_dr25
+    name: "Kepler Robovetter (DR25)"
+    auprc: 0.85
+    brier: 0.12
+    recall_small_at_1pct: 0.78
+  - id: exominer
+    name: "ExoMiner (Kepler)"
+    auprc: 0.89
+    brier: 0.11
+    recall_small_at_1pct: 0.82

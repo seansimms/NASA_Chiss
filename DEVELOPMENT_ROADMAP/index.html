@@ -1,0 +1,1786 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Project Chiss: Development Roadmap - Chiss</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#project-chiss-development-roadmap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Chiss" class="md-header__button md-logo" aria-label="Chiss" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Chiss
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Project Chiss: Development Roadmap
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/seansimms/NASA_Chiss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Chiss" class="md-nav__button md-logo" aria-label="Chiss" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Chiss
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/seansimms/NASA_Chiss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Benchmarks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../citation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Citation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enhancing-novelty-production-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enhancing Novelty &amp; Production Readiness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executive Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-0-pre-hackathon-sprint-48-72-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 0: Pre-Hackathon Sprint (48-72 Hours)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 0: Pre-Hackathon Sprint (48-72 Hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priority-maximize-novelty-score-without-breaking-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority: Maximize Novelty Score WITHOUT Breaking Production
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p01-architecture-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      P0.1: Architecture Visualization 🎨
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p02-interpretability-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      P0.2: Interpretability Layer 🔍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p03-benchmark-comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      P0.3: Benchmark Comparison Table 📊
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p04-attention-mechanism-in-h2-cnn" class="md-nav__link">
+    <span class="md-ellipsis">
+      P0.4: Attention Mechanism in H2 CNN 🧠
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p05-physics-informed-loss-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      P0.5: Physics-Informed Loss Function 🔬
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-1-post-hackathon-enhancement-months-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Post-Hackathon Enhancement (Months 1-3)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1: Post-Hackathon Enhancement (Months 1-3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priority-deployment-driven-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority: Deployment-Driven Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p11-multi-sector-stitching-tess-long-period-planets" class="md-nav__link">
+    <span class="md-ellipsis">
+      P1.1: Multi-Sector Stitching (TESS Long-Period Planets) 🛰️
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p12-bayesian-uncertainty-quantification" class="md-nav__link">
+    <span class="md-ellipsis">
+      P1.2: Bayesian Uncertainty Quantification 📊
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p13-active-learning-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      P1.3: Active Learning Loop 🔄
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p14-real-time-streaming-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      P1.4: Real-Time Streaming Pipeline 🚀
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-2-long-term-innovation-months-4-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Long-Term Innovation (Months 4-12)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2: Long-Term Innovation (Months 4-12)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priority-research-grade-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority: Research-Grade Capabilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p21-foundation-model-pre-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      P2.1: Foundation Model Pre-Training 🤖
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p22-multi-mission-joint-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      P2.2: Multi-Mission Joint Training 🌍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p23-anomaly-detection-for-novel-transits" class="md-nav__link">
+    <span class="md-ellipsis">
+      P2.3: Anomaly Detection for Novel Transits 🔎
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-research-extensions-year-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Research Extensions (Year 2+)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3: Research Extensions (Year 2+)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priority-publications-community-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority: Publications &amp; Community Impact
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p31-open-source-release-community-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      P3.1: Open-Source Release &amp; Community Building 🌐
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p32-multi-wavelength-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      P3.2: Multi-Wavelength Integration 🔭
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p33-interpretable-machine-learning-paper" class="md-nav__link">
+    <span class="md-ellipsis">
+      P3.3: Interpretable Machine Learning Paper 📄
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-priorities-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Priorities Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-hackathon-48-72-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Hackathon (48-72 hours)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-hackathon-months-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-Hackathon (Months 1-3)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#long-term-months-4-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long-Term (Months 4-12)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Success Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Success Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-hackathon-sprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Hackathon Sprint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-hackathon-month-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-Hackathon (Month 3)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#long-term-month-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Long-Term (Month 12)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Risk Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Risks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schedule-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schedule Risks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-quick-start-for-pre-hackathon-sprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix: Quick Start for Pre-Hackathon Sprint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix: Quick Start for Pre-Hackathon Sprint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#day-1-8-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 1 (8 hours)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-2-8-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 2 (8 hours)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-3-4-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 3 (4 hours)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="project-chiss-development-roadmap">Project Chiss: Development Roadmap</h1>
+<h2 id="enhancing-novelty-production-readiness">Enhancing Novelty &amp; Production Readiness</h2>
+<p><strong>Version:</strong> 1.0<br />
+<strong>Date:</strong> October 4, 2025<br />
+<strong>Planning Horizon:</strong> Pre-Hackathon → Year 2</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p>This roadmap prioritizes enhancements that <strong>maximize both novelty and operational value</strong>, transforming Project Chiss from "strong contender" to "clear winner" status while maintaining production-grade quality.</p>
+<p><strong>Strategic Focus:</strong>
+1. <strong>Pre-Hackathon Sprint</strong> (48-72 hours): High-impact, low-risk improvements
+2. <strong>Post-Hackathon Enhancement</strong> (Months 1-3): Deployment-driven features
+3. <strong>Long-Term Innovation</strong> (Months 4-12): Research-grade capabilities</p>
+<p><strong>Key Principle:</strong> Every enhancement must pass the <strong>"Deploy Monday Test"</strong> - can this ship to production without regression?</p>
+<hr />
+<h2 id="phase-0-pre-hackathon-sprint-48-72-hours">Phase 0: Pre-Hackathon Sprint (48-72 Hours)</h2>
+<h3 id="priority-maximize-novelty-score-without-breaking-production">Priority: Maximize Novelty Score WITHOUT Breaking Production</h3>
+<h3 id="p01-architecture-visualization">P0.1: Architecture Visualization 🎨</h3>
+<p><strong>Impact:</strong> High novelty perception, zero technical risk<br />
+<strong>Effort:</strong> 4-6 hours<br />
+<strong>Owner:</strong> Documentation lead</p>
+<p><strong>Deliverables:</strong>
+1. <strong>System Architecture Diagram</strong> (docs/architecture/)
+   - Three-tier pipeline flow (Stage 1→2→3)
+   - Multi-head ensemble detail (H1, H2, H3)
+   - Data flow with shape annotations
+   - Tool: draw.io, Lucidchart, or Python diagrams library</p>
+<ol>
+<li><strong>Performance Comparison Chart</strong></li>
+<li>Bar charts: H1 vs Ensemble (AUPRC, Recall, Throughput)</li>
+<li>Mission impact timeline (Without Chiss vs With Chiss)</li>
+<li>Tool: matplotlib, seaborn, or Google Slides</li>
+</ol>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-python"># Add to docs/generate_diagrams.py
+from diagrams import Diagram, Cluster, Edge
+from diagrams.custom import Custom
+
+with Diagram(&quot;Chiss Architecture&quot;, direction=&quot;TB&quot;):
+    with Cluster(&quot;Stage 1: Preprocessing&quot;):
+        detrend = Custom(&quot;Two-Pass Detrending&quot;, &quot;icon.png&quot;)
+    with Cluster(&quot;Stage 2: Ensemble&quot;):
+        h1 = Custom(&quot;H1: LightGBM&quot;, &quot;icon.png&quot;)
+        h2 = Custom(&quot;H2: CNN&quot;, &quot;icon.png&quot;)
+        h3 = Custom(&quot;H3: Centroid&quot;, &quot;icon.png&quot;)
+    with Cluster(&quot;Stage 3: Vetting&quot;):
+        vet = Custom(&quot;5-Stage Kill-Chain&quot;, &quot;icon.png&quot;)
+
+    detrend &gt;&gt; [h1, h2, h3] &gt;&gt; vet
+</code></pre>
+<p><strong>Acceptance Criteria:</strong>
+- [ ] Architecture diagram in docs/architecture/system_overview.png
+- [ ] Performance charts in docs/figures/performance_comparison.png
+- [ ] Integration into PRESENTATION_GUIDE.md (Slides 3-4)
+- [ ] High-resolution exports for print (300 DPI)</p>
+<hr />
+<h3 id="p02-interpretability-layer">P0.2: Interpretability Layer 🔍</h3>
+<p><strong>Impact:</strong> Addresses "black box" criticism, high scientific value<br />
+<strong>Effort:</strong> 6-8 hours<br />
+<strong>Owner:</strong> ML engineer</p>
+<p><strong>Deliverables:</strong>
+1. <strong>SHAP Value Integration</strong> (chiss/features/interpret.py)
+   - Compute SHAP values for top 100 candidates
+   - Visualize feature importance per prediction
+   - Add to vetting dossiers</p>
+<ol>
+<li><strong>Feature Attribution Dashboard</strong></li>
+<li>Show which features drove H1 decision</li>
+<li>Highlight top-3 discriminative features per target</li>
+</ol>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-python"># chiss/features/interpret.py
+import shap
+from lightgbm import Booster
+import numpy as np
+
+def compute_shap_values(model_path: str, X: np.ndarray, feature_names: list):
+    &quot;&quot;&quot;Compute SHAP values for H1 predictions.&quot;&quot;&quot;
+    booster = Booster(model_file=model_path)
+    explainer = shap.TreeExplainer(booster)
+    shap_values = explainer.shap_values(X)
+
+    return {
+        'shap_values': shap_values,
+        'base_value': explainer.expected_value,
+        'feature_names': feature_names
+    }
+
+def generate_shap_plot(shap_values, X, feature_names, output_path):
+    &quot;&quot;&quot;Generate SHAP summary plot.&quot;&quot;&quot;
+    shap.summary_plot(
+        shap_values, X, 
+        feature_names=feature_names,
+        show=False
+    )
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.close()
+</code></pre>
+<p><strong>Integration Points:</strong>
+- Modify <code>chiss/vetting/dossier.py</code> to include SHAP plots
+- Add <code>--interpret</code> flag to <code>chiss features report</code> CLI
+- Generate SHAP summary for top 100 candidates automatically</p>
+<p><strong>Acceptance Criteria:</strong>
+- [ ] SHAP values computed for Kepler DR25 holdout (top 100 candidates)
+- [ ] Feature attribution plots in dossiers/interpretability/
+- [ ] CLI flag: <code>chiss features interpret --features X.parquet --model model.json</code>
+- [ ] Test: <code>test_interpret_shap_values.py</code> validates non-zero attributions</p>
+<p><strong>Time Budget:</strong>
+- Library integration: 2 hours
+- Dossier integration: 3 hours
+- CLI + testing: 2 hours
+- Documentation: 1 hour</p>
+<hr />
+<h3 id="p03-benchmark-comparison-table">P0.3: Benchmark Comparison Table 📊</h3>
+<p><strong>Impact:</strong> Credibility boost, competitive differentiation<br />
+<strong>Effort:</strong> 3-4 hours<br />
+<strong>Owner:</strong> Science lead</p>
+<p><strong>Deliverables:</strong>
+1. <strong>Quantitative Comparison</strong> (docs/benchmarks/)
+   - Project Chiss vs Robovetter vs ExoMiner
+   - Metrics: Small planet recall, AUPRC, throughput, deployment status
+   - Literature sources cited</p>
+<ol>
+<li><strong>Method Comparison Matrix</strong></li>
+<li>Architecture, vetting integration, drift monitoring, production readiness</li>
+<li>Visual: Checkmarks, X's, color-coded</li>
+</ol>
+<p><strong>Table Format:</strong></p>
+<pre><code class="language-markdown">| Method | Small Planet Recall | AUPRC | Vetting | Deployment | Reference |
+|--------|-------------------|-------|---------|------------|-----------|
+| Robovetter | 67% | 0.82 | Manual | Deployed | Thompson+ 2018 |
+| ExoMiner | 78% | 0.86 | None | Research | Valizadegan+ 2022 |
+| **Chiss** | **93%** | **0.92** | **Integrated** | **30 days** | This work |
+</code></pre>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-bash"># docs/benchmarks/comparison.md
+- Scrape performance numbers from papers
+- Create LaTeX table (for publication quality)
+- Generate PNG export for presentations
+</code></pre>
+<p><strong>Acceptance Criteria:</strong>
+- [ ] Comparison table in docs/benchmarks/comparison.md
+- [ ] Literature references in docs/benchmarks/references.bib
+- [ ] Visual export in docs/figures/comparison_table.png
+- [ ] Integration into NASA_INNOVATION_BRIEF.md (Section 7)</p>
+<p><strong>Sources to Review:</strong>
+- Thompson et al. 2018 (Kepler Robovetter)
+- Valizadegan et al. 2022 (ExoMiner)
+- Ansdell et al. 2018 (Neural network survey)
+- Yu et al. 2019 (AstroNet-K2)</p>
+<hr />
+<h3 id="p04-attention-mechanism-in-h2-cnn">P0.4: Attention Mechanism in H2 CNN 🧠</h3>
+<p><strong>Impact:</strong> Modern architecture claim, potential +2-3pp performance<br />
+<strong>Effort:</strong> 8-12 hours<br />
+<strong>Owner:</strong> ML engineer<br />
+<strong>Risk:</strong> Medium (may not improve performance, requires retraining)</p>
+<p><strong>Rationale:</strong>
+Current H2 CNN uses global average pooling → loses positional information. Self-attention can learn which phase regions matter most (ingress/egress vs flat bottom).</p>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-python"># chiss/heads/h2_cnn_attention.py
+import torch
+import torch.nn as nn
+
+class SelfAttention1D(nn.Module):
+    &quot;&quot;&quot;1D self-attention for phase-folded light curves.&quot;&quot;&quot;
+    def __init__(self, channels):
+        super().__init__()
+        self.query = nn.Linear(channels, channels // 8)
+        self.key = nn.Linear(channels, channels // 8)
+        self.value = nn.Linear(channels, channels)
+        self.gamma = nn.Parameter(torch.zeros(1))
+
+    def forward(self, x):  # x: (B, C, L)
+        B, C, L = x.shape
+        x_flat = x.permute(0, 2, 1)  # (B, L, C)
+
+        q = self.query(x_flat)  # (B, L, C/8)
+        k = self.key(x_flat)    # (B, L, C/8)
+        v = self.value(x_flat)  # (B, L, C)
+
+        attn = torch.softmax(q @ k.transpose(-2, -1) / (C/8)**0.5, dim=-1)
+        out = attn @ v  # (B, L, C)
+        out = out.permute(0, 2, 1)  # (B, C, L)
+
+        return self.gamma * out + x
+
+class H2NetAttention(nn.Module):
+    &quot;&quot;&quot;H2 CNN with self-attention.&quot;&quot;&quot;
+    def __init__(self, channels=16, dropout=0.1):
+        super().__init__()
+        self.conv1 = nn.Conv1d(1, channels, 7, padding=3)
+        self.conv2 = nn.Conv1d(channels, channels, 7, padding=3)
+        self.attn = SelfAttention1D(channels)  # NEW
+        self.pool = nn.AdaptiveAvgPool1d(128)
+        self.fc1 = nn.Linear(channels * 128, 64)
+        self.dropout = nn.Dropout(dropout)
+        self.fc2 = nn.Linear(64, 1)
+
+    def forward(self, x):  # x: (B, 1, L)
+        x = torch.relu(self.conv1(x))
+        x = torch.relu(self.conv2(x))
+        x = self.attn(x)  # Self-attention layer
+        x = self.pool(x)
+        x = x.flatten(1)
+        x = torch.relu(self.fc1(x))
+        x = self.dropout(x)
+        return self.fc2(x).squeeze(-1)
+</code></pre>
+<p><strong>Integration Strategy:</strong>
+1. <strong>Train H2 Attention Variant</strong> (6 hours on GPU)
+   - Use existing <code>train_h2_oof()</code> function
+   - Save as <code>h2_attention_fold_{k}.pt</code></p>
+<ol>
+<li><strong>A/B Test Performance</strong> (2 hours)</li>
+<li>Compare original H2 vs H2-Attention on validation set</li>
+<li>
+<p>Metrics: AUPRC, small planet recall, inference time</p>
+</li>
+<li>
+<p><strong>Decision Gate</strong></p>
+</li>
+<li>If improvement ≥ +2pp: Deploy as default H2</li>
+<li>If improvement &lt; +2pp: Keep as research branch, mention in presentation</li>
+</ol>
+<p><strong>Acceptance Criteria:</strong>
+- [ ] H2-Attention trained on Kepler DR25 (5-fold CV)
+- [ ] Performance report: <code>artifacts/h2_attention_eval.json</code>
+- [ ] Attention weight visualization (which phase regions attended)
+- [ ] Test: <code>test_h2_attention_determinism.py</code>
+- [ ] Inference time ≤ 2× original H2 (acceptable tradeoff)</p>
+<p><strong>Rollback Plan:</strong>
+If performance regresses or training doesn't converge by deadline:
+- Keep original H2 CNN
+- Mention attention mechanism as "future work" in presentation
+- Show preliminary attention visualizations as "interpretability research"</p>
+<p><strong>Time Budget:</strong>
+- Implementation: 3 hours
+- Training (5 folds): 6 hours (GPU)
+- Evaluation: 2 hours
+- Integration/testing: 2 hours (if successful)</p>
+<hr />
+<h3 id="p05-physics-informed-loss-function">P0.5: Physics-Informed Loss Function 🔬</h3>
+<p><strong>Impact:</strong> Strong scientific novelty claim<br />
+<strong>Effort:</strong> 6-8 hours<br />
+<strong>Owner:</strong> Science + ML lead<br />
+<strong>Risk:</strong> Medium (may not improve performance, conceptually complex)</p>
+<p><strong>Rationale:</strong>
+Current training minimizes BCE loss only. Physics-informed loss adds penalty for violating Kepler's Third Law: a/R★ ∝ P^(2/3).</p>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-python"># chiss/heads/h2_physics_loss.py
+import torch
+import torch.nn as nn
+
+class PhysicsInformedLoss(nn.Module):
+    &quot;&quot;&quot;BCE + physics constraint on transit duration.&quot;&quot;&quot;
+    def __init__(self, alpha=0.1):
+        super().__init__()
+        self.bce = nn.BCEWithLogitsLoss()
+        self.alpha = alpha  # Physics term weight
+
+    def forward(self, logits, labels, durations, periods, rho_star):
+        &quot;&quot;&quot;
+        Args:
+            logits: Model predictions (B,)
+            labels: Ground truth (B,)
+            durations: Transit durations in hours (B,)
+            periods: Orbital periods in days (B,)
+            rho_star: Stellar density in g/cm^3 (B,)
+        &quot;&quot;&quot;
+        # Standard BCE loss
+        bce_loss = self.bce(logits, labels)
+
+        # Physics constraint: Expected duration from Kepler's law
+        # d_expected = (P / π) * sqrt(1 - b^2) / sqrt(ρ★) (simplified, b=0)
+        # d_expected ∝ P / ρ★^(1/2)
+        duration_expected = periods / (rho_star ** 0.5 + 1e-6)
+        duration_expected = duration_expected / duration_expected.mean() * durations.mean()
+
+        # L2 penalty for violating physics
+        physics_penalty = torch.mean((durations - duration_expected) ** 2)
+
+        # Only apply to positive labels (planets should obey physics)
+        physics_penalty = physics_penalty * labels.mean()
+
+        return bce_loss + self.alpha * physics_penalty
+</code></pre>
+<p><strong>Integration Points:</strong>
+- Modify <code>train_h2_oof()</code> to accept stellar parameters
+- Requires loading TIC data (ρ★) during training
+- Config flag: <code>stage2.h2.physics_loss: true</code></p>
+<p><strong>Acceptance Criteria:</strong>
+- [ ] Physics-informed loss implemented in chiss/heads/h2_physics_loss.py
+- [ ] Unit test: <code>test_physics_loss_penalty.py</code> validates constraint
+- [ ] Training comparison: physics vs standard BCE
+- [ ] Performance report: Does it improve small planet recall?</p>
+<p><strong>Decision Gate:</strong>
+- If improvement ≥ +1pp: Highlight as key innovation
+- If no improvement: Discuss as "physics-aware regularization research"
+- If degrades: Rollback, mention in "future work"</p>
+<p><strong>Time Budget:</strong>
+- Implementation: 2 hours
+- TIC data integration: 2 hours
+- Training comparison: 3 hours
+- Analysis: 1 hour</p>
+<hr />
+<h2 id="phase-1-post-hackathon-enhancement-months-1-3">Phase 1: Post-Hackathon Enhancement (Months 1-3)</h2>
+<h3 id="priority-deployment-driven-features">Priority: Deployment-Driven Features</h3>
+<h3 id="p11-multi-sector-stitching-tess-long-period-planets">P1.1: Multi-Sector Stitching (TESS Long-Period Planets) 🛰️</h3>
+<p><strong>Impact:</strong> Critical for habitable zone planets around Sun-like stars<br />
+<strong>Effort:</strong> 2-3 weeks<br />
+<strong>Owner:</strong> Pipeline engineer</p>
+<p><strong>Problem:</strong>
+TESS observes each sector for 27 days → detects short-period planets (&lt;20 days). Habitable zone planets need 200-400 day periods → require multi-sector stitching.</p>
+<p><strong>Solution:</strong></p>
+<pre><code class="language-python"># chiss/search/multi_sector.py
+def stitch_sectors(sector_files: List[Path], target_id: str) -&gt; Dict:
+    &quot;&quot;&quot;
+    Combine multiple TESS sectors for single target.
+
+    Steps:
+    1. Load all sector light curves
+    2. Normalize each sector independently (detrend separately)
+    3. Align time offsets (BJD correction)
+    4. Concatenate flux arrays
+    5. Run TLS search on combined light curve
+    &quot;&quot;&quot;
+    sectors = []
+    for file in sector_files:
+        time, flux, hdr = load_time_flux(file)
+        flux_detrended, _ = transit_preserving_detrend(time, flux)
+        sectors.append({'time': time, 'flux': flux_detrended, 'sector': hdr['SECTOR']})
+
+    # Concatenate
+    time_combined = np.concatenate([s['time'] for s in sectors])
+    flux_combined = np.concatenate([s['flux'] for s in sectors])
+
+    # Sort by time
+    idx = np.argsort(time_combined)
+    time_combined = time_combined[idx]
+    flux_combined = flux_combined[idx]
+
+    # Search for transits
+    return search_with_alias_control(time_combined, flux_combined)
+</code></pre>
+<p><strong>CLI Integration:</strong></p>
+<pre><code class="language-bash">chiss search run-multi-sector \
+  --target TIC12345678 \
+  --sectors artifacts/tess/sector_*/TIC12345678.fits \
+  --out artifacts/tess_multi_sector/
+</code></pre>
+<p><strong>Validation:</strong>
+- Test on known long-period TESS planets (TOI-700d: 37 days)
+- Injection-recovery: Inject 200-day transits across 10 sectors</p>
+<p><strong>Deliverables:</strong>
+- [ ] Multi-sector stitching module (chiss/search/multi_sector.py)
+- [ ] CLI command: <code>chiss search run-multi-sector</code>
+- [ ] Test: <code>test_multi_sector_stitching.py</code>
+- [ ] Documentation: docs/multi_sector_guide.md
+- [ ] Performance report: Recovery rate vs period (10-400 days)</p>
+<hr />
+<h3 id="p12-bayesian-uncertainty-quantification">P1.2: Bayesian Uncertainty Quantification 📊</h3>
+<p><strong>Impact:</strong> Mission-critical for follow-up prioritization<br />
+<strong>Effort:</strong> 3-4 weeks<br />
+<strong>Owner:</strong> ML engineer</p>
+<p><strong>Problem:</strong>
+Current system outputs point predictions (p=0.87). Scientists need confidence intervals: "p=0.87 ± 0.05" vs "p=0.87 ± 0.20".</p>
+<p><strong>Solution: MC Dropout for Epistemic Uncertainty</strong></p>
+<pre><code class="language-python"># chiss/heads/h2_uncertainty.py
+def predict_with_uncertainty(model, X, n_samples=50):
+    &quot;&quot;&quot;
+    MC Dropout uncertainty estimation.
+
+    Args:
+        model: H2Net with dropout layers
+        X: Input data (N, 1, L)
+        n_samples: Number of MC samples
+
+    Returns:
+        mean: Mean prediction (N,)
+        std: Predictive standard deviation (N,)
+        samples: All MC samples (N, n_samples)
+    &quot;&quot;&quot;
+    model.train()  # Enable dropout at inference
+    samples = []
+
+    with torch.no_grad():
+        for _ in range(n_samples):
+            logits = model(X)
+            probs = torch.sigmoid(logits)
+            samples.append(probs.cpu().numpy())
+
+    samples = np.stack(samples, axis=1)  # (N, n_samples)
+    mean = samples.mean(axis=1)
+    std = samples.std(axis=1)
+
+    return mean, std, samples
+</code></pre>
+<p><strong>Integration:</strong>
+- Modify <code>score_tess()</code> to compute uncertainties
+- Add <code>p_std</code> column to output CSV
+- Prioritize candidates: high p, low uncertainty</p>
+<p><strong>Validation:</strong>
+- Calibration plot: Uncertainty vs prediction error
+- High uncertainty should correlate with ambiguous cases</p>
+<p><strong>Deliverables:</strong>
+- [ ] MC Dropout uncertainty in chiss/heads/h2_uncertainty.py
+- [ ] Ensemble variance uncertainty (stacker weights variance)
+- [ ] Uncertainty-aware ranking: Sort by p / sqrt(σ²)
+- [ ] Test: <code>test_uncertainty_calibration.py</code>
+- [ ] Visualization: Uncertainty vs AUPRC curves</p>
+<hr />
+<h3 id="p13-active-learning-loop">P1.3: Active Learning Loop 🔄</h3>
+<p><strong>Impact:</strong> Reduces labeling cost, improves model with minimal data<br />
+<strong>Effort:</strong> 4-5 weeks<br />
+<strong>Owner:</strong> ML + Science lead</p>
+<p><strong>Concept:</strong>
+Model identifies most informative unlabeled TESS targets → expert labels 50-100 → retrain → repeat.</p>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-python"># chiss/active/selector.py
+def select_active_targets(scores_df, n_targets=50, strategy='uncertainty'):
+    &quot;&quot;&quot;
+    Select most informative targets for expert labeling.
+
+    Strategies:
+    - 'uncertainty': High prediction uncertainty
+    - 'margin': Close to decision boundary (p ≈ 0.5)
+    - 'diverse': Representative sampling (k-means on features)
+    &quot;&quot;&quot;
+    if strategy == 'uncertainty':
+        # Select high-uncertainty targets
+        return scores_df.nlargest(n_targets, 'p_std')['star'].tolist()
+
+    elif strategy == 'margin':
+        # Select near decision boundary
+        scores_df['margin'] = abs(scores_df['p_final'] - 0.5)
+        return scores_df.nsmallest(n_targets, 'margin')['star'].tolist()
+
+    elif strategy == 'diverse':
+        # k-means clustering on features
+        from sklearn.cluster import KMeans
+        X = scores_df[feature_cols].values
+        kmeans = KMeans(n_clusters=n_targets, random_state=42)
+        kmeans.fit(X)
+        # Select nearest to each centroid
+        return select_nearest_to_centroids(X, kmeans)
+</code></pre>
+<p><strong>Workflow:</strong>
+1. Score 10,000 TESS targets
+2. Select 50 most informative via active learning
+3. Expert labels in 1 day (vs 1 week for random 50)
+4. Retrain H1 (incremental learning)
+5. Repeat</p>
+<p><strong>Deliverables:</strong>
+- [ ] Active learning selector (chiss/active/selector.py)
+- [ ] CLI: <code>chiss active select --scores scores.csv --n 50 --strategy uncertainty</code>
+- [ ] Expert labeling UI (simple web form or Jupyter widget)
+- [ ] Incremental retraining pipeline
+- [ ] Case study: 50 active labels vs 50 random labels (performance diff)</p>
+<hr />
+<h3 id="p14-real-time-streaming-pipeline">P1.4: Real-Time Streaming Pipeline 🚀</h3>
+<p><strong>Impact:</strong> Enable same-day candidate alerts for new TESS sectors<br />
+<strong>Effort:</strong> 5-6 weeks<br />
+<strong>Owner:</strong> Pipeline + DevOps engineer</p>
+<p><strong>Architecture:</strong></p>
+<pre><code>MAST TESS Archive → Kafka Topic → Chiss Worker Pods → PostgreSQL → Alert System
+</code></pre>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-python"># chiss/streaming/worker.py
+from kafka import KafkaConsumer
+import json
+
+def stream_worker(kafka_broker, topic='tess_lightcurves'):
+    &quot;&quot;&quot;
+    Real-time processing of TESS light curves.
+
+    Workflow:
+    1. Consume light curve from Kafka
+    2. Run P-02 (detrend, search, fit)
+    3. Run P-03 (feature extraction, H1 scoring)
+    4. Run P-04 (H2/H3 ensemble)
+    5. Run P-05 (vetting)
+    6. Publish to alert topic if p &gt; 0.8
+    &quot;&quot;&quot;
+    consumer = KafkaConsumer(
+        topic,
+        bootstrap_servers=kafka_broker,
+        value_deserializer=lambda m: json.loads(m.decode('utf-8'))
+    )
+
+    for message in consumer:
+        lc_data = message.value
+        target_id = lc_data['target_id']
+
+        # Run full pipeline
+        result = run_pipeline_on_target(lc_data)
+
+        # Publish high-confidence candidates
+        if result['p_final'] &gt; 0.8:
+            publish_alert(result)
+</code></pre>
+<p><strong>Kubernetes Deployment:</strong></p>
+<pre><code class="language-yaml"># k8s/chiss-worker.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chiss-worker
+spec:
+  replicas: 10
+  template:
+    spec:
+      containers:
+      - name: worker
+        image: chiss:streaming-v1
+        resources:
+          requests:
+            cpu: &quot;4&quot;
+            memory: &quot;16Gi&quot;
+        env:
+        - name: KAFKA_BROKER
+          value: &quot;kafka.chiss.svc:9092&quot;
+</code></pre>
+<p><strong>Deliverables:</strong>
+- [ ] Kafka integration (chiss/streaming/worker.py)
+- [ ] Kubernetes deployment manifests
+- [ ] Alert system (email/Slack/Telegram)
+- [ ] Monitoring dashboard (Grafana + Prometheus)
+- [ ] Latency target: &lt;5 minutes from data arrival to alert</p>
+<hr />
+<h2 id="phase-2-long-term-innovation-months-4-12">Phase 2: Long-Term Innovation (Months 4-12)</h2>
+<h3 id="priority-research-grade-capabilities">Priority: Research-Grade Capabilities</h3>
+<h3 id="p21-foundation-model-pre-training">P2.1: Foundation Model Pre-Training 🤖</h3>
+<p><strong>Impact:</strong> Transfer learning to any mission (TESS, Roman, ground-based)<br />
+<strong>Effort:</strong> 3-4 months<br />
+<strong>Owner:</strong> ML research team</p>
+<p><strong>Concept:</strong>
+Pre-train encoder on 200M unlabeled TESS light curves (self-supervised), then fine-tune on labeled Kepler data.</p>
+<p><strong>Architecture: Masked Autoencoder (MAE)</strong></p>
+<pre><code class="language-python"># chiss/foundation/mae.py
+class MaskedAutoEncoder1D(nn.Module):
+    &quot;&quot;&quot;
+    Masked autoencoder for light curves.
+
+    Pre-training:
+    1. Randomly mask 50% of time series
+    2. Encoder: Transformer (6 layers, 8 heads)
+    3. Decoder: Reconstruct masked regions
+    4. Loss: MSE on masked regions
+
+    Fine-tuning:
+    1. Remove decoder
+    2. Add classification head
+    3. Train on labeled Kepler data (10,000 samples)
+    &quot;&quot;&quot;
+    def __init__(self, d_model=256, nhead=8, num_layers=6):
+        super().__init__()
+        self.encoder = nn.TransformerEncoder(
+            nn.TransformerEncoderLayer(d_model, nhead),
+            num_layers
+        )
+        self.decoder = nn.TransformerDecoder(
+            nn.TransformerDecoderLayer(d_model, nhead),
+            num_layers
+        )
+
+    def forward(self, x, mask):
+        # Encode visible patches
+        enc = self.encoder(x[~mask])
+        # Decode to reconstruct masked patches
+        dec = self.decoder(enc, mask_tokens)
+        return dec
+</code></pre>
+<p><strong>Data Pipeline:</strong>
+- 200M TESS 2-minute cadence light curves (public archive)
+- 10TB storage, 2 weeks training on 8× A100 GPUs</p>
+<p><strong>Deliverables:</strong>
+- [ ] Self-supervised pre-training code
+- [ ] Pre-trained foundation model weights
+- [ ] Fine-tuning adapter for Kepler/TESS/etc.
+- [ ] Benchmark: Few-shot learning (10, 50, 100, 500 labels)
+- [ ] Paper: "Foundation Models for Exoplanet Discovery"</p>
+<hr />
+<h3 id="p22-multi-mission-joint-training">P2.2: Multi-Mission Joint Training 🌍</h3>
+<p><strong>Impact:</strong> Single model for Kepler + TESS + K2 + ground-based<br />
+<strong>Effort:</strong> 2-3 months<br />
+<strong>Owner:</strong> ML engineer</p>
+<p><strong>Concept:</strong>
+Domain adaptation via adversarial training - model can't distinguish mission.</p>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-python"># chiss/multi_mission/adapter.py
+class DomainAdversarialNet(nn.Module):
+    &quot;&quot;&quot;
+    Encoder + Classifier + Domain Discriminator
+
+    Training:
+    1. Encoder extracts mission-invariant features
+    2. Classifier predicts planet/not
+    3. Domain discriminator predicts mission (Kepler/TESS)
+    4. Loss: L_cls - λ * L_domain (adversarial)
+    &quot;&quot;&quot;
+    def __init__(self):
+        super().__init__()
+        self.encoder = H2Net()  # Feature extractor
+        self.classifier = nn.Linear(64, 1)  # Planet classifier
+        self.domain_disc = nn.Linear(64, 2)  # Mission discriminator
+
+    def forward(self, x, alpha):
+        features = self.encoder(x)
+        class_pred = self.classifier(features)
+
+        # Gradient reversal for domain discriminator
+        reversed_features = GradientReversal.apply(features, alpha)
+        domain_pred = self.domain_disc(reversed_features)
+
+        return class_pred, domain_pred
+</code></pre>
+<p><strong>Training Strategy:</strong>
+- Kepler DR25: 10,000 labeled
+- TESS: 2,000 labeled
+- Combined training with mission ID labels
+- Evaluate on both holdout sets</p>
+<p><strong>Deliverables:</strong>
+- [ ] Domain adaptation training pipeline
+- [ ] Multi-mission model weights
+- [ ] Performance: Kepler holdout, TESS holdout, transfer gap
+- [ ] Case study: Train on Kepler, deploy on TESS (zero-shot)</p>
+<hr />
+<h3 id="p23-anomaly-detection-for-novel-transits">P2.3: Anomaly Detection for Novel Transits 🔎</h3>
+<p><strong>Impact:</strong> Discover unusual systems (circumbinary, disintegrating planets)<br />
+<strong>Effort:</strong> 2-3 months<br />
+<strong>Owner:</strong> Science + ML lead</p>
+<p><strong>Concept:</strong>
+Autoencoders learn "normal" transit morphology. High reconstruction error → anomaly.</p>
+<p><strong>Implementation:</strong></p>
+<pre><code class="language-python"># chiss/anomaly/detector.py
+class TransitAutoEncoder(nn.Module):
+    &quot;&quot;&quot;Variational autoencoder for transit shapes.&quot;&quot;&quot;
+    def __init__(self, latent_dim=32):
+        super().__init__()
+        self.encoder = nn.Sequential(
+            nn.Conv1d(1, 16, 7, padding=3),
+            nn.ReLU(),
+            nn.Conv1d(16, 32, 7, padding=3),
+            nn.ReLU(),
+            nn.AdaptiveAvgPool1d(64),
+            nn.Flatten(),
+            nn.Linear(32 * 64, latent_dim * 2)  # μ, log(σ²)
+        )
+
+        self.decoder = nn.Sequential(
+            nn.Linear(latent_dim, 32 * 64),
+            nn.Unflatten(1, (32, 64)),
+            nn.ConvTranspose1d(32, 16, 7, padding=3),
+            nn.ReLU(),
+            nn.ConvTranspose1d(16, 1, 7, padding=3),
+        )
+
+    def forward(self, x):
+        # Encode to latent space
+        mu, logvar = self.encoder(x).chunk(2, dim=1)
+        z = self.reparameterize(mu, logvar)
+        # Decode
+        x_recon = self.decoder(z)
+        return x_recon, mu, logvar
+
+    def anomaly_score(self, x):
+        &quot;&quot;&quot;Reconstruction error = anomaly score.&quot;&quot;&quot;
+        x_recon, _, _ = self.forward(x)
+        return torch.mean((x - x_recon) ** 2, dim=[1, 2])
+</code></pre>
+<p><strong>Application:</strong>
+- Train on "normal" Kepler planets
+- Score all TESS candidates
+- Top anomaly scores → flag for expert review
+- Discover: Transits with secondary eclipses, asymmetric shapes, variable depths</p>
+<p><strong>Deliverables:</strong>
+- [ ] VAE anomaly detector
+- [ ] Anomaly score for all Kepler candidates
+- [ ] Top-100 anomalies for expert review
+- [ ] Case study: Known unusual systems (KOI-142 circumbinary)</p>
+<hr />
+<h2 id="phase-3-research-extensions-year-2">Phase 3: Research Extensions (Year 2+)</h2>
+<h3 id="priority-publications-community-impact">Priority: Publications &amp; Community Impact</h3>
+<h3 id="p31-open-source-release-community-building">P3.1: Open-Source Release &amp; Community Building 🌐</h3>
+<p><strong>Effort:</strong> Ongoing<br />
+<strong>Owner:</strong> All team</p>
+<p><strong>Milestones:</strong>
+1. <strong>Month 12:</strong> Public GitHub release
+   - Apache 2.0 license
+   - Full documentation
+   - Docker containers
+   - Tutorial notebooks</p>
+<ol>
+<li><strong>Month 14:</strong> PyPI package</li>
+<li><code>pip install chiss</code></li>
+<li>CLI auto-install</li>
+<li>
+<p>Pre-trained models downloadable</p>
+</li>
+<li>
+<p><strong>Month 16:</strong> Community contributions</p>
+</li>
+<li>GitHub issues/PRs</li>
+<li>Feature requests</li>
+<li>
+<p>External validation on other datasets</p>
+</li>
+<li>
+<p><strong>Month 18:</strong> Workshop/Tutorial</p>
+</li>
+<li>AAS meeting workshop</li>
+<li>Exoplanet III conference tutorial</li>
+<li>YouTube series</li>
+</ol>
+<hr />
+<h3 id="p32-multi-wavelength-integration">P3.2: Multi-Wavelength Integration 🔭</h3>
+<p><strong>Effort:</strong> 6 months<br />
+<strong>Owner:</strong> Science team</p>
+<p><strong>Concept:</strong>
+Combine photometry (TESS) + spectroscopy (HARPS) + imaging (adaptive optics) in joint model.</p>
+<p><strong>Modalities:</strong>
+- <strong>H1:</strong> Photometric features (current)
+- <strong>H2:</strong> Phase-folded light curve (current)
+- <strong>H3:</strong> Centroid motion (current)
+- <strong>H4 (NEW):</strong> RV periodogram (radial velocity)
+- <strong>H5 (NEW):</strong> High-resolution imaging (companion detection)</p>
+<p><strong>Use Case:</strong>
+Joint transit + RV detection increases confidence, reduces false positives from background stars.</p>
+<hr />
+<h3 id="p33-interpretable-machine-learning-paper">P3.3: Interpretable Machine Learning Paper 📄</h3>
+<p><strong>Effort:</strong> 3 months (writing)<br />
+<strong>Owner:</strong> All team</p>
+<p><strong>Target Journal:</strong> Astronomical Journal or MNRAS<br />
+<strong>Title:</strong> "Physics-Constrained Ensemble Learning for Exoplanet Discovery: Interpretability and Production Deployment"</p>
+<p><strong>Outline:</strong>
+1. Introduction: The false positive problem
+2. Methods:
+   - Adaptive detrending
+   - Multi-head ensemble
+   - Physics constraints
+   - Astrophysical vetting
+3. Results:
+   - Kepler DR25 performance
+   - TESS transfer learning
+   - Interpretability analysis (SHAP)
+4. Discussion:
+   - Production deployment lessons
+   - Comparison to prior work
+5. Conclusion: Operational ML for astronomy</p>
+<hr />
+<h2 id="implementation-priorities-matrix">Implementation Priorities Matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Novelty</th>
+<th>Production Value</th>
+<th>Effort</th>
+<th>Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Architecture Diagrams</strong></td>
+<td>Medium</td>
+<td>High</td>
+<td>Low</td>
+<td><strong>P0 (Do First)</strong></td>
+</tr>
+<tr>
+<td><strong>SHAP Interpretability</strong></td>
+<td>High</td>
+<td>Medium</td>
+<td>Low</td>
+<td><strong>P0 (Do First)</strong></td>
+</tr>
+<tr>
+<td><strong>Benchmark Table</strong></td>
+<td>Medium</td>
+<td>High</td>
+<td>Low</td>
+<td><strong>P0 (Do First)</strong></td>
+</tr>
+<tr>
+<td><strong>Attention in H2</strong></td>
+<td>High</td>
+<td>Medium</td>
+<td>Medium</td>
+<td><strong>P0 (If Time)</strong></td>
+</tr>
+<tr>
+<td><strong>Physics Loss</strong></td>
+<td>High</td>
+<td>Low</td>
+<td>Medium</td>
+<td><strong>P0 (If Time)</strong></td>
+</tr>
+<tr>
+<td><strong>Multi-Sector Stitching</strong></td>
+<td>Medium</td>
+<td>High</td>
+<td>High</td>
+<td><strong>P1 (Post-Hack)</strong></td>
+</tr>
+<tr>
+<td><strong>Uncertainty Quantification</strong></td>
+<td>High</td>
+<td>High</td>
+<td>Medium</td>
+<td><strong>P1 (Post-Hack)</strong></td>
+</tr>
+<tr>
+<td><strong>Active Learning</strong></td>
+<td>Medium</td>
+<td>Medium</td>
+<td>High</td>
+<td><strong>P1 (Post-Hack)</strong></td>
+</tr>
+<tr>
+<td><strong>Streaming Pipeline</strong></td>
+<td>Low</td>
+<td>High</td>
+<td>High</td>
+<td><strong>P1 (Post-Hack)</strong></td>
+</tr>
+<tr>
+<td><strong>Foundation Model</strong></td>
+<td>Very High</td>
+<td>Medium</td>
+<td>Very High</td>
+<td><strong>P2 (Research)</strong></td>
+</tr>
+<tr>
+<td><strong>Anomaly Detection</strong></td>
+<td>High</td>
+<td>Low</td>
+<td>High</td>
+<td><strong>P2 (Research)</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="resource-requirements">Resource Requirements</h2>
+<h3 id="pre-hackathon-48-72-hours">Pre-Hackathon (48-72 hours)</h3>
+<p><strong>Team:</strong>
+- 1× ML Engineer (P0.2, P0.4, P0.5)
+- 1× Science Lead (P0.3, P0.5)
+- 1× Documentation Lead (P0.1)</p>
+<p><strong>Compute:</strong>
+- 1× GPU (P0.4, P0.5 retraining): 12 hours
+- Laptop (P0.1, P0.2, P0.3): Standard workstation</p>
+<p><strong>Cost:</strong> ~$50 (cloud GPU for 12 hours)</p>
+<h3 id="post-hackathon-months-1-3">Post-Hackathon (Months 1-3)</h3>
+<p><strong>Team:</strong>
+- 2× ML Engineers (P1.1-P1.4)
+- 1× Pipeline Engineer (P1.1, P1.4)
+- 1× DevOps Engineer (P1.4)
+- 1× Science Lead (validation)</p>
+<p><strong>Compute:</strong>
+- 16-core CPU workstation: $2,000/month (cloud)
+- 2× A100 GPUs: $4,000/month (training)</p>
+<p><strong>Cost:</strong> ~$18,000 for 3 months</p>
+<h3 id="long-term-months-4-12">Long-Term (Months 4-12)</h3>
+<p><strong>Team:</strong>
+- 3× ML Researchers (P2.1, P2.2, P2.3)
+- 2× Engineers (maintenance)
+- 1× Technical Writer (documentation)</p>
+<p><strong>Compute:</strong>
+- 8× A100 GPUs: $16,000/month (foundation model)
+- Storage: 20TB → $1,000/month</p>
+<p><strong>Cost:</strong> ~$150,000 for 9 months</p>
+<hr />
+<h2 id="success-metrics">Success Metrics</h2>
+<h3 id="pre-hackathon-sprint">Pre-Hackathon Sprint</h3>
+<ul>
+<li>[ ] Architecture diagrams integrated into presentation</li>
+<li>[ ] SHAP values computed for top 100 candidates</li>
+<li>[ ] Benchmark comparison table validated by science lead</li>
+<li>[ ] Attention H2 trained (if time) with performance report</li>
+<li>[ ] All enhancements: Zero regressions on acceptance gates</li>
+</ul>
+<h3 id="post-hackathon-month-3">Post-Hackathon (Month 3)</h3>
+<ul>
+<li>[ ] Multi-sector stitching deployed in production</li>
+<li>[ ] Uncertainty quantification in all predictions</li>
+<li>[ ] Active learning case study: 50 labels → +3pp performance</li>
+<li>[ ] Real-time streaming: &lt;5 min latency on test deployment</li>
+</ul>
+<h3 id="long-term-month-12">Long-Term (Month 12)</h3>
+<ul>
+<li>[ ] Foundation model published (arXiv + GitHub)</li>
+<li>[ ] Multi-mission model: Kepler + TESS joint training</li>
+<li>[ ] Paper accepted in Astronomical Journal</li>
+<li>[ ] 100+ GitHub stars, 10+ external contributors</li>
+<li>[ ] Deployed at 1+ NASA facility (Ames, JPL, STScI)</li>
+</ul>
+<hr />
+<h2 id="risk-management">Risk Management</h2>
+<h3 id="technical-risks">Technical Risks</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Attention H2 doesn't improve</strong></td>
+<td>Keep as research branch, mention in future work</td>
+</tr>
+<tr>
+<td><strong>Physics loss destabilizes training</strong></td>
+<td>Strong hyperparameter tuning, early stopping</td>
+</tr>
+<tr>
+<td><strong>Multi-sector stitching increases false positives</strong></td>
+<td>Sector-wise normalization, validation on known planets</td>
+</tr>
+<tr>
+<td><strong>Foundation model training cost overruns</strong></td>
+<td>Pilot on 10M samples first, then scale</td>
+</tr>
+</tbody>
+</table>
+<h3 id="schedule-risks">Schedule Risks</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pre-hackathon features not ready</strong></td>
+<td>Prioritize P0.1-P0.3 (low-risk), defer P0.4-P0.5</td>
+</tr>
+<tr>
+<td><strong>Post-hackathon team unavailable</strong></td>
+<td>Hire contractors, extend timeline</td>
+</tr>
+<tr>
+<td><strong>GPU availability</strong></td>
+<td>Reserve cloud instances in advance, have CPU fallback</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="appendix-quick-start-for-pre-hackathon-sprint">Appendix: Quick Start for Pre-Hackathon Sprint</h2>
+<h3 id="day-1-8-hours">Day 1 (8 hours)</h3>
+<p><strong>Morning (4 hours):</strong>
+- [ ] P0.1: Create architecture diagrams (draw.io or Python diagrams)
+- [ ] P0.3: Build benchmark comparison table (scrape papers)</p>
+<p><strong>Afternoon (4 hours):</strong>
+- [ ] P0.2: Implement SHAP integration (library install + basic plot)
+- [ ] P0.2: Integrate SHAP into dossier generation</p>
+<h3 id="day-2-8-hours">Day 2 (8 hours)</h3>
+<p><strong>Morning (4 hours):</strong>
+- [ ] P0.4: Implement attention mechanism in H2
+- [ ] P0.4: Start training H2-Attention (5-fold CV, runs overnight)</p>
+<p><strong>Afternoon (4 hours):</strong>
+- [ ] P0.5: Implement physics-informed loss
+- [ ] P0.5: Start training H2-Physics (5-fold CV, runs overnight)</p>
+<h3 id="day-3-4-hours">Day 3 (4 hours)</h3>
+<p><strong>Morning (4 hours):</strong>
+- [ ] Evaluate P0.4 and P0.5 results
+- [ ] Decision: Deploy or rollback
+- [ ] Update presentation materials with new features
+- [ ] Final testing: All gates still pass</p>
+<hr />
+<p><strong>This roadmap transforms Project Chiss from strong contender to clear leader by adding cutting-edge features while maintaining production-grade quality.</strong></p>
+<p><strong>Ready to build? Start with P0.1-P0.3 today—they're low-risk, high-impact wins.</strong> 🚀</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

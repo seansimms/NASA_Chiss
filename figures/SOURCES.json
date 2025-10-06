@@ -1,0 +1,15 @@
+{
+  "config/config.yaml": "a6d0d1654603a2739965755e7c05d6166a9fdb25164ac054d43bc5ecc8fe9723",
+  "artifacts/stage2/oof_stage2.csv": "b0a2165e8da80f3971a70047cba418f1b50c9aca631426bfd899ac471a22df42",
+  "artifacts/features/oof.parquet": "66d6cf5f6038d810de60346e436defee7c89a4379e765df6e2ffae0a610a9ab2",
+  "labels/kepler_dr25_labels.csv": "f8e4935be8575ae9f2a23fe7f94c8a7cdecd9122e9a112813fe9a35a3eb7f55a",
+  "labels/kepler_dr25_radii.csv": "8295f08b547c25378f7c37fd4ab820f03e73281784cb8c484f91af557dd6eb81",
+  "figures_meta": {
+    "auprc_h1": 0.0,
+    "auprc_ens": 0.0,
+    "ece_h1": 0.0,
+    "ece_ens": 0.0,
+    "brier_h1": NaN,
+    "brier_ens": NaN
+  }
+}

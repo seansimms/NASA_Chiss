@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "id": "chiss_ens",
+      "name": "Chiss (Ensemble)",
+      "source": "artifacts",
+      "status": "MISSING_ARTIFACTS",
+      "values": {
+        "auprc": null,
+        "brier": null,
+        "ece15": null,
+        "p_at_fpr1": null,
+        "recall_small": null
+      }
+    },
+    {
+      "id": "robovetter_dr25",
+      "name": "Kepler Robovetter (DR25)",
+      "source": "paper: Thompson+ 2018",
+      "status": "OK",
+      "values": {
+        "auprc": 0.86,
+        "brier": 0.12,
+        "ece15": 0.06,
+        "p_at_fpr1": 0.55,
+        "recall_small": 0.67
+      }
+    }
+  ]
+}
