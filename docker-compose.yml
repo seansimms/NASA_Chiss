@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+      - AUTH_REQUIRED=false
+      - ALLOWED_ORIGINS=*
+      - PROJECT_ROOT=/app
+      - ARTIFACTS_ROOT=/app/artifacts
+      - DB_PATH=/app/chiss.db
+      - JOB_ROOT=/app/jobdata
+    volumes:
+      - ./backend/jobdata:/app/jobdata
+      - ./artifacts:/app/artifacts
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - chiss-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE=http://localhost:8001
+    depends_on:
+      - backend
+    networks:
+      - chiss-network
+
+networks:
+  chiss-network:
+    driver: bridge
+
+volumes:
+  artifacts:
+
