@@ -1,0 +1,11 @@
+{
+  "title": "Chiss: Physics-aware, low-FPR exoplanet discovery pipeline",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Simms, Sean", "affiliation": "Mathematical Intelligence"}
+  ],
+  "description": "Open, reproducible pipeline for exoplanet transit discovery with AutoFE, lean ensemble, and automated vetting; emits ranked lists, dossiers, and alerts.",
+  "license": "MIT",
+  "keywords": ["exoplanets", "TESS", "Kepler", "astronomy", "machine learning", "open science"],
+  "related_identifiers": []
+}
